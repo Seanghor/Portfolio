@@ -1,8 +1,11 @@
-<script setup lang="ts">
-  import NavigationBar from './components/LandingPage.vue';
-</script>
+
 
 <template>
-  <NavigationBar />
+  <div class="p-0">
+    <NavigationBar />
+  </div>
 </template>
 
+<script setup lang="ts">
+import NavigationBar from '@/components/NavigationBar.vue'
+</script>
