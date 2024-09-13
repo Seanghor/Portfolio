@@ -27,11 +27,15 @@
         <h3>LinkedIn</h3>
       </div>
       <a href="" class="mt-6 inline-block text-blue-500">Hire Me</a>
-      hello <FontAwesomeIcon class="text-white" icon="fa-solid fa-check-square" />
+      hello
+      <div>
+        <font-awesome-icon :icon="['fas', 'coffee']" /> <!-- Solid icon -->
+        <font-awesome-icon :icon="['far', 'address-book']" /> <!-- Regular icon -->
+        <font-awesome-icon :icon="['fab', 'github']" /> <!-- Brand icon -->
+      </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 </script>
