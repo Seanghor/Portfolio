@@ -1,5 +1,3 @@
-
-
 <template>
   <LandingPage />
 </template>
