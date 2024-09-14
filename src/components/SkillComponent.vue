@@ -1,6 +1,6 @@
 <template>
   <div class="text-white flex flex-col justify-center  py-6 md:py-14 lg:py-16">
-    <div class="inline-block flex-col items-center mx-auto">
+    <div v-motion="motionTitle" class="inline-block flex-col items-center mx-auto">
       <h1 class="text-sm-title md:text-md-title lg:text-lg-title font-bold">My Skills</h1>
       <div class="space-y-1 md:space-y-1 lg:space-y-1.5">
         <div class="h-[2px] md:h-[3px] lg:h-[4px] rounded-md bg-orange w-full" />
@@ -23,7 +23,7 @@
     </div>
 
     <!-- Year of Experience -->
-    <div class="my-4 md:my-6 lg:my-8 flex flex-row items- text-left space-x-2 md:space-x-3 lg:space-x-3">
+    <div v-motion-roll-visible-right class="my-4 md:my-6 lg:my-8 flex flex-row items- text-left space-x-2 md:space-x-3 lg:space-x-3">
       <h2 class="text-5xl md:text-7xl lg:text-8xl">3</h2>
       <span class="flex flex-col justify-center text-sm md:text-base lg:text-xl space-y-0 md:space-y-1 lg:space-y-2">
         <h4>Year Of</h4>
@@ -41,3 +41,10 @@
     </div>
   </div>
 </template>
+
+
+<script setup lang="ts">
+  import {motionSlideVisibleOfX} from '../config/motions/motionSlideVisibleOfX'
+  //-- motion title
+  const motionTitle = motionSlideVisibleOfX('100%')
+</script>
