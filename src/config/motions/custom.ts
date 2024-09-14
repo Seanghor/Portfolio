@@ -83,6 +83,16 @@ export function motionPopSlowly(initialOfY: number, duration: number, delay: num
                 ease: 'ease-out', // Easing function
             },
         },
+        visible: {
+            opacity: 1, // Fully visible
+            y: 0, // Move to the final position
+            scale: 1, // Final scale
+            transition: {
+                duration: duration, // Duration in seconds
+                delay: delay, // Delay in seconds
+                ease: 'ease-out', // Easing function
+            },
+        },
         variants: {
             custom: {
                 scale: 2, // Scale factor for custom variant
