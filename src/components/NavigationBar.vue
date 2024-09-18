@@ -1,5 +1,5 @@
 <template>
-  <header class="font-navigation flex justify-between items-center mx-auto max-w-[1440px] p-4">
+  <header class=" font-navigation flex justify-between items-center mx-auto max-w-[1440px] p-4">
     <!-- Logo -->
     <a href="#" class="text-orange font-extrabold text-base md:text-lg lg:text-3xl font-poppins">
       Seanghor

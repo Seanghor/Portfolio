@@ -1,15 +1,27 @@
 <template >
-  <div class="flex justify-center items-center">
-    <HOCPadding>
+  <div class="overflow-hidden flex flex-col h-full w-full items-center justify-center mx-auto">
+    <LandingPage />
+    <AboutSection />
+    <SkillSection />
+    <ExperienceSection />
+    <ContactSection />
+    <FooterSection />
+    <!-- <SkillSection />
+    <ExperienceSection /> -->
+    <!-- <HOCPadding>
       <LandingPage />
-      <AboutComponent />
-      <SkillComponent />
-    </HOCPadding>
+      <AboutSection />
+      <SkillSection />
+      <ExperienceSection />
+    </HOCPadding> -->
   </div>
 </template>
 <script setup lang="ts">
-import LandingPage from '@/components/LandingPage.vue'
+import LandingPage from '@/components/sections/LandingPage.vue'
 import HOCPadding from '@/components/HOC/HOCPadding.vue'
-import AboutComponent from '@/components/AboutComponent.vue'
-import SkillComponent from '@/components/SkillComponent.vue'
+import AboutSection from '@/components/sections/AboutSection.vue'
+import SkillSection from '@/components/sections/SkillSection.vue'
+import ExperienceSection from '@/components/sections/ExperienceSection.vue'
+import ContactSection from '@/components/sections/ContactSection.vue'
+import FooterSection from '@/components/sections/FooterSection.vue'
 </script>
